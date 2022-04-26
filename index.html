@@ -5,14 +5,104 @@
         p, ul, h3{
            color: aqua;
            font-size: large;
+           background-color:rgba(0, 0, 0, 0.3);
+           padding: 0px;
         }
         body{
             background-image: url("https://preview.redd.it/r9nch39d1ji61.jpg?auto=webp&s=1ad24120ee7c18a6d9e9c9bc87674abef36eb57b");
-            background-size:50%;
+            background: size 27%;;
+            background-attachment: fixed;
+        }
+        img.utsa{
+            float: right;
+        }
+        main {
+            color: #CCC;
+            margin-left: 7em;
+            padding: 1px 0 1px 5%;
+            border-left: 1px solid;
+        }
+        nav {
+            float: left;
+            width: 7em;
+            background: #FDD;
+        }
+
+        nav ul {
+            margin: 0;
+            padding: 0;
+            width: 7em;
+            background: white;
+            border: 1px solid;
+        }
+
+        nav li {
+            position: relative;
+            list-style: none;
+            margin: 0;
+            border-bottom: 1px solid #CCC;
+        }
+
+        nav ul ul {
+            position: absolute;
+            top: 0;
+            left: 7em;
+            display: none;
+        }
+
+        nav li a {
+            display: block;
+            padding: 0.25em 0 0.25em 0.5em;
+            text-decoration: none;
+        }
+
+        nav li:hover {
+            background: #6F99F2;
+        }
+
+        nav li.submenu {
+            background: url(http://interactivepython.org/runestone/static/webfundamentals/_static/submenu.gif) 95% 50% no-repeat;
+        }
+
+        nav li.submenu:hover {
+            background-color: #EDD;
+        }
+
+
+
+        nav ul.level1 li.submenu:hover ul.level2,
+        nav ul.level2 li.submenu:hover ul.level3 {
+            display:block;
         }
     </style>
+    <title>
+        The totally awesome life of one Nicholas Martinez
+    </title>
 </head>
 <body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>Classes
+                <ul>
+                    <li>Aquatic Science</li>
+                    <li>Economics</li>
+                    <li>Psychology</li>
+                    <li>Statistics</li>
+                    <li>Computer Science 3</li>
+                </ul>
+            </li>
+            <li>Hobbies
+                <ul>
+                    <li>Video Games</li>
+                    <li>Guitar</li>
+                    <li>Friends</li>
+                </ul>
+            </li>
+            <li>MORBIUS</li>
+        </ul>
+    </nav>
+<main>
 <a name="top" href="#bottom"><h1>The Life of Nick Martinez<h1></a>
 <h3>Hello my name is Nick Martinez.</h3>
 
@@ -48,5 +138,6 @@
 <img src="https://www.morbius.movie/assets/images/desktopbanner.jpg" width=400 >
 <p>"IT'S MORBIN' TIME!!!!!" - Dr. Michael Morbius</p>
 <a href="#top" name="bottom"><h2>End of page</h2></a>
+</main>
 </body>
 </html>
